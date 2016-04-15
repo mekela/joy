@@ -3,6 +3,64 @@
 
 
 //styles for custom device width
-@include mq($max-width: 1000px) {
-  
+@include mq($max-width: 845px) {
+  .container{
+  	width: auto;
+  	padding: 0 10px; 
+  }
+  .product{
+  	width: 50%;
+  }
+  	.video_block .bx-controls-direction a{
+  		left: -50px;
+  		&.bx-next{
+			left: auto;
+			right: -50px;
+		}
+  	}
+}
+
+@include mq($max-width: 650px) {
+	.video_block{
+		width: auto;
+	}
+	.video_link{
+		width: 100%;
+	}
+	.video_block .bx-controls-direction a{
+		display: none;
+	}
+	.modal form div .button, .contact_form form .button, input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea{
+		width: 100%;
+	}
+	.footer{
+		padding: 150px 0;
+	}
+	img{
+		max-width: 100%;
+	}
+}
+@include mq($max-width: 450px) {
+
+	.product{
+	  	width: 100%;
+	  	p{
+	  		font-size: 12px;
+	  	}
+	  }
+	p, .header p{
+		font-size: 15px;
+	}
+	.map{
+ 		iframe{
+ 			width: 100% !important;
+ 			height: 300px !important;
+ 		}
+ 	}
+ 	.modal form{
+ 		padding: 40px 10px;
+ 		div  .button, div input{
+ 			font-size: 14px;
+ 		}
+ 	}
 }

@@ -1,438 +1,176 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
-h6, p, blockquote, pre, a, abbr, acronym, address, big,
-cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
-strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
-dd, ol, ul, li, fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
-embed, figure, figcaption, footer, header, hgroup, menu, nav,
-output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
-body, html {
-  height: 100%;
-}
+body, html { height: 100%; }
 
-img, fieldset, a img {
-  border: none;
-}
+img, fieldset, a img { border: none; }
 
-input[type="submit"],
-button {
-  cursor: pointer;
-}
+input[type="submit"], button { cursor: pointer; }
 
-input[type="submit"]::-moz-focus-inner,
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
 
-textarea {
-  overflow: auto;
-}
+textarea { overflow: auto; }
 
-input, button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+input, button { margin: 0; padding: 0; border: 0; }
 
-input, textarea, select, button,
-h1, h2, h3, h4, h5, h6, a, span, a:focus {
-  outline: none;
-}
+input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
 
-ul, ol {
-  list-style-type: none;
-}
+ul, ol { list-style-type: none; }
 
-@media screen and (max-width: 1024px) {
-  * {
-    -webkit-text-size-adjust: none;
-  }
-}
+@media screen and (max-width: 1024px) { * { -webkit-text-size-adjust: none; } }
 
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  width: 100%;
-}
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-blockquote, q {
-  quotes: none;
-}
+blockquote, q { quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
 
-body {
-  font-family: "Trebuchet MS";
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #000;
-}
+body { font-family: "Trebuchet MS"; font-weight: normal; font-size: 12px; line-height: 1.4; color: #000; }
 
-a {
-  text-decoration: underline;
-  color: inherit;
-  cursor: pointer;
-}
+a { text-decoration: underline; color: inherit; cursor: pointer; }
 
-a:hover {
-  text-decoration: none;
-}
+a:hover { text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: inherit;
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 18px;
-}
+h1, h2, h3, h4, h5, h6 { color: inherit; font-weight: normal; text-transform: uppercase; text-align: center; padding-bottom: 18px; }
 
-h1 {
-  font-size: 45px;
-}
+h1 { font-size: 45px; }
 
-h2 {
-  font-size: 45px;
-}
+h2 { font-size: 45px; }
 
-h3 {
-  font-size: 30px;
-}
+h3 { font-size: 30px; }
 
-h4 {
-  font-size: 28px;
-}
+h4 { font-size: 28px; }
 
-h5 {
-  font-size: 26px;
-}
+h5 { font-size: 26px; }
 
-h6 {
-  font-size: 24px;
-}
+h6 { font-size: 24px; }
 
-p {
-  font-size: 18px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 25px;
-}
+p { font-size: 18px; line-height: 24px; text-align: center; text-transform: uppercase; padding-bottom: 25px; }
 
-.button {
-  background: #000000;
-  font-family: "Trebuchet MS";
-  color: #ffffff;
-  font-size: 24px;
-  padding: 13px 20px 13px 20px;
-  text-decoration: none;
-  border: none;
-  display: inline-block;
-  -webkit-appearance: none;
-  box-sizing: border-box;
-  text-align: center;
-}
+.button { background: #000000; font-family: "Trebuchet MS"; color: #ffffff; font-size: 24px; padding: 13px 20px 13px 20px; text-decoration: none; border: none; display: inline-block; -webkit-appearance: none; box-sizing: border-box; text-align: center; }
 
-.button:hover {
-  opacity: 0.8;
-}
+.button:hover { opacity: 0.8; }
 
-input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea {
-  width: 600px;
-  height: 46px;
-  box-sizing: border-box;
-  padding: 0 15px;
-  color: #797979;
-  font-size: 18px;
-  font-family: "Trebuchet MS";
-  border: 2px solid #000;
-  resize: none;
-  text-align: center;
-}
+input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea { width: 600px; height: 46px; box-sizing: border-box; padding: 0 15px; color: #797979; font-size: 18px; font-family: "Trebuchet MS"; border: 2px solid #000; resize: none; text-align: center; }
 
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus {
-  color: #000;
-}
+input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus { color: #000; }
 
-input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, input[type=date].red_input, input[type=url].red_input, textarea.red_input {
-  box-shadow: 0 0 2px #ff2d50;
-  background: #fdc4ce;
-}
+input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, input[type=date].red_input, input[type=url].red_input, textarea.red_input { box-shadow: 0 0 2px #ff2d50; background: #fdc4ce; }
 
-input::-webkit-input-placeholder {
-  color: inherit;
-}
+input::-webkit-input-placeholder { color: inherit; }
 
-input:-moz-placeholder {
-  color: inherit;
-}
+input:-moz-placeholder { color: inherit; }
 
-textarea {
-  height: 90px;
-  padding-top: 5px;
-}
+textarea { height: 90px; padding-top: 5px; }
 
-.modal {
-  display: none;
-}
+.modal { display: none; }
 
-.clear {
-  clear: both;
-  height: 0;
-  overflow: hidden;
-}
+.clear { clear: both; height: 0; overflow: hidden; }
 
-.float_left {
-  float: left !important;
-}
+.float_left { float: left !important; }
 
-.float_right {
-  float: right !important;
-}
+.float_right { float: right !important; }
 
-.float_none {
-  float: none !important;
-}
+.float_none { float: none !important; }
 
-.text_right {
-  text-align: right !important;
-}
+.text_right { text-align: right !important; }
 
-.text_center {
-  text-align: center !important;
-}
+.text_center { text-align: center !important; }
 
-.text_left {
-  text-align: left !important;
-}
+.text_left { text-align: left !important; }
 
-.absolute {
-  position: absolute !important;
-}
+.absolute { position: absolute !important; }
 
-.relative {
-  position: relative !important;
-}
+.relative { position: relative !important; }
 
-.fixed {
-  position: fixed !important;
-}
+.fixed { position: fixed !important; }
 
-.background_none {
-  background: none !important;
-}
+.background_none { background: none !important; }
 
-.inline {
-  display: inline;
-}
+.inline { display: inline; }
 
-.inline-block {
-  display: inline-block;
-}
+.inline-block { display: inline-block; }
 
-.block {
-  display: block;
-}
+.block { display: block; }
 
-.hidden {
-  display: none;
-}
+.hidden { display: none; }
 
-.wrapper {
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  min-width: 1000px;
-}
+.wrapper { position: relative; overflow: hidden; }
 
-.container {
-  width: 845px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}
+.container { width: 845px; margin: 0 auto; position: relative; overflow: hidden; }
 
 /*----------header----------*/
-.header {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 27px;
-}
+.header { position: relative; overflow: hidden; padding-bottom: 27px; }
 
-.header p {
-  color: #000000;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 24px;
-}
+.header p { color: #000000; font-size: 18px; text-transform: uppercase; text-align: center; line-height: 24px; }
 
-.logo {
-  display: block;
-  text-align: center;
-  padding: 35px 0;
-}
+.logo { display: block; text-align: center; padding: 35px 0; }
 
 /*----------end-header----------*/
 /*----------main----------*/
-.main {
-  position: relative;
-  overflow: hidden;
-}
+.main { position: relative; overflow: hidden; }
 
-.products {
-  text-align: center;
-  font-size: 0;
-}
+.products { text-align: center; font-size: 0; }
 
-.product {
-  display: inline-block;
-  width: 33%;
-  vertical-align: top;
-  font-size: 8px;
-  padding-bottom: 40px;
-}
+.product { display: inline-block; width: 33%; vertical-align: top; font-size: 8px; padding-bottom: 40px; }
 
-.product p {
-  width: 235px;
-  font-size: 8px;
-  line-height: 1.3;
-  margin: 0 auto;
-  padding-bottom: 0;
-}
+.product p { width: 235px; font-size: 8px; line-height: 1.3; margin: 0 auto; padding-bottom: 0; }
 
-.product figcaption {
-  padding: 0 0 10px 0;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: -20px;
-}
+.product figcaption { padding: 0 0 10px 0; font-size: 18px; font-weight: bold; margin-top: -20px; }
 
-.product h6 {
-  padding: 8px 0 0 0;
-  font-size: 18px;
-}
+.product h6 { padding: 8px 0 0 0; font-size: 18px; }
 
-.video_wrap {
-  padding-bottom: 100px;
-}
+.video_wrap { padding-bottom: 100px; }
 
-.video_block {
-  width: 630px;
-  margin: 0 auto;
-  position: relative;
-}
+.video_block { width: 630px; margin: 0 auto; position: relative; }
 
-.video_block .bx-pager {
-  display: none;
-}
+.video_block .bx-pager { display: none; }
 
-.video_block .bx-controls-direction a {
-  width: 46px;
-  height: 153px;
-  background: url(../img/slider_arrow.png) no-repeat center;
-  position: absolute;
-  top: 50%;
-  margin-top: -75px;
-  left: -105px;
-  font: 0 / 0 a;
-  text-shadow: none;
-  color: transparent;
-}
+.video_block .bx-controls-direction a { width: 46px; height: 153px; background: url(../img/slider_arrow.png) no-repeat center; position: absolute; top: 50%; margin-top: -75px; left: -105px; font: 0 / 0 a; text-shadow: none; color: transparent; }
 
-.video_block .bx-controls-direction a.bx-next {
-  left: auto;
-  right: -105px;
-  -moz-transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-}
+.video_block .bx-controls-direction a.bx-next { left: auto; right: -105px; -webkit-transform: scale(-1, 1); -ms-transform: scale(-1, 1); transform: scale(-1, 1); -webkit-filter: FlipH; filter: FlipH; -ms-filter: "FlipH"; }
 
-.video_link {
-  margin: 0 auto;
-  margin-top: 24px;
-  display: block;
-  width: 609px;
-}
+.video_link { margin: 0 auto; margin-top: 24px; display: block; width: 609px; }
 
-.map {
-  padding-bottom: 55px;
-}
+.map { padding-bottom: 55px; }
 
-.map iframe {
-  width: 100% !important;
-}
+.map iframe { width: 100% !important; }
 
-.contact_form {
-  text-align: center;
-  padding-bottom: 69px;
-}
+.contact_form { text-align: center; padding-bottom: 69px; }
 
-.contact_form form div {
-  padding-bottom: 22px;
-}
+.contact_form form div { padding-bottom: 22px; }
 
-.contact_form form .button {
-  width: 600px;
-  height: 90px;
-  font-size: 45px;
-  text-transform: uppercase;
-}
+.contact_form form .button { width: 600px; height: 90px; font-size: 45px; text-transform: uppercase; }
 
 /*----------end main----------*/
 /*----------footer----------*/
-.footer {
-  position: relative;
-  overflow: hidden;
-  padding: 390px 0;
-  color: #fff;
-  font-size: 121px;
-  text-transform: uppercase;
-  text-align: center;
-  background: #000;
-}
+.footer { position: relative; overflow: hidden; padding: 390px 0; color: #fff; font-size: 121px; text-transform: uppercase; text-align: center; background: #000; }
 
 /*----------end footer----------*/
 /*----------modal----------*/
-.modal form {
-  padding: 43px 40px;
-  padding-bottom: 23px;
-}
+.modal form { padding: 43px 40px; padding-bottom: 23px; }
 
-.modal form div {
-  padding-bottom: 17px;
-  text-align: center;
-}
+.modal form div { padding-bottom: 17px; text-align: center; }
 
-.modal form div input {
-  border-width: 1px;
-  height: 41px;
-}
+.modal form div input { border-width: 1px; height: 41px; }
 
-.modal form div .button {
-  width: 363px;
-  height: 43px;
-  border: 2px solid #000;
-  background: #fff;
-  color: #000;
-  font-size: 18px;
-  padding: 0;
-  line-height: 43px;
-  margin-top: 20px;
-}
+.modal form div .button { width: 363px; height: 43px; border: 2px solid #000; background: #fff; color: #000; font-size: 18px; padding: 0; line-height: 43px; margin-top: 20px; }
 
 /*----------end modal----------*/
+@media only screen and (max-width: 845px) { .container { width: auto; padding: 0 10px; }
+  .product { width: 50%; }
+  .video_block .bx-controls-direction a { left: -50px; }
+  .video_block .bx-controls-direction a.bx-next { left: auto; right: -50px; } }
+
+@media only screen and (max-width: 650px) { .video_block { width: auto; }
+  .video_link { width: 100%; }
+  .video_block .bx-controls-direction a { display: none; }
+  .modal form div .button, .contact_form form .button, input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea { width: 100%; }
+  .footer { padding: 150px 0; }
+  img { max-width: 100%; } }
+
+@media only screen and (max-width: 450px) { .product { width: 100%; }
+  .product p { font-size: 12px; }
+  p, .header p { font-size: 15px; }
+  .map iframe { width: 100% !important; height: 300px !important; }
+  .modal form { padding: 40px 10px; }
+  .modal form div .button, .modal form div input { font-size: 14px; } }
