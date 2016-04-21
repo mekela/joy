@@ -3,7 +3,7 @@
 
 
 //styles for custom device width
-@include mq($max-width: 845px) {
+@include mq($max-width: 1100px) {
   .container{
   	width: auto;
   	padding: 0 10px; 
@@ -17,6 +17,17 @@
 			left: auto;
 			right: -50px;
 		}
+  	}
+  	.reviews_block {
+  		figure{
+  			width: 33%;
+  		}
+  	}
+  	img{
+  		max-width: 100%;
+  	}
+  	.scroll_section{
+  		height: auto !important;
   	}
 }
 
@@ -38,6 +49,24 @@
 	}
 	img{
 		max-width: 100%;
+	}
+	.reviews_block{
+		figure{
+			width: 50%;
+			text-align: center;
+		}
+	}
+	.menu {
+		li{
+			&:nth-child(3){
+				display: block;
+			}
+		}
+	}
+	.map{
+		nav{
+			width: 100%;
+		}
 	}
 }
 @include mq($max-width: 450px) {
@@ -63,4 +92,10 @@
  			font-size: 14px;
  		}
  	}
+ 	.reviews_block{
+		figure{
+			width: 100%;
+			text-align: center;
+		}
+	}
 }

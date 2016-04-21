@@ -7,9 +7,9 @@ overflow: hidden;
 
 @mixin button($button){
   @include button_gradient('');
-  font-family: $ffamily;
-  color: #ffffff;
-  font-size: 24px;
+  font-family: Times New Roman, 'times new roman';
+  color: #000;
+  font-size: 18px;
   padding: 13px 20px 13px 20px;
   text-decoration: none;
   border: none;
@@ -19,7 +19,7 @@ overflow: hidden;
   text-align: center;
 }
 @mixin button_gradient($button_gradient){
-  background: #000000;
+  background: #fff;
 }
 @mixin button_gradient_hover($button_gradient_hover){
   opacity: 0.8;
@@ -30,9 +30,9 @@ overflow: hidden;
   height: 46px;
   box-sizing: border-box;
   padding: 0 15px;
-  color: #797979;
+  color: #c0c0c0;
   font-size: 18px;
-  font-family: $ffamily;
+  font-family: Times New Roman, 'times new roman';
   border: 2px solid #000;
   resize:none;
   text-align: center;
@@ -51,10 +51,10 @@ $gradient: linear-gradient(to right, #d22beb 0%, #d22beb 0%, #1a94f2 100%);
 $white: #fff;
 $black: #000;
 $fsize: 14px;
-$ffamily:  'Trebuchet MS';
+$ffamily:  'Arial';
 
 //custom font family
-$fontfamily:  'Arial';
+$fontfamily:  'Tahoma';
 $bold:  'Clear Sans Bold';
 $italic: 'Clear Sans Italic';
 $light: 'Clear Sans Light';
